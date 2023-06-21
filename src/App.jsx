@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import Text from "./components/Text";
+import Input from "./components/Input";
 function App() {
   const [text, setText] = useState("");
 
@@ -10,8 +11,8 @@ function App() {
 
   return (
     <div>
-      <input type="text" value={text} onChange={handleInputChange} />
-      <p>Character count: {text.length}</p>
+      <Input />
+      <Text />
     </div>
   );
 }
