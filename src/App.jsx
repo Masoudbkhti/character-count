@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div>
-      <Input />
-      <Text />
+      <Input onChange={handleInputChange} />
+      <Text count={text.length} />
     </div>
   );
 }
